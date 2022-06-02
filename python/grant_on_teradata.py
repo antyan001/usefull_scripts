@@ -1,13 +1,13 @@
-#!/home/tumanov1-ga_ca-sbrf-ru/bin/python36
+#!/home/$USER/bin/python36
 import os, sys, re, time
 import getpass
 import teradatasql as td
 
-USER = 'tumanov1-ga'
+USER = ''
 HOST = 'tdsb15.cgs.sbrf.ru'
 DB = 'PRD_DB_CLIENT4D_REP'
 TABLE = 'stg_org_decision_maker'
-TO_USER = 'zhernokleev-ga'
+TO_USER = ''
 
 sys.path.insert(0, '../')
 from utils import get_pass
