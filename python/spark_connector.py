@@ -54,18 +54,18 @@ class SparkConnector(object):
         print(self.metastore)
 
         nodes = dict(
-            CLSKLCIB     = 'hdfs://clsklcib:8020/',     # Облако данных КИБ
-            CLSKLOD      = 'hdfs://clsklod:8020/',      # СКЛОД
-            CLOUDBDA     = 'hdfs://CloudBDA:8020/',     # BDA
-            CLSKLRISK    = 'hdfs://clsklrisk:8020/',    # Облако данных Риски
-            CLSKLOD2     = 'hdfs://clsklod2:8020/',     # СКЛОД2
+            CLSKLCIB     = 'hdfs://clsklcib:8020/',     
+            CLSKLOD      = 'hdfs://clsklod:8020/',      
+            CLOUDBDA     = 'hdfs://CloudBDA:8020/',     
+            CLSKLRISK    = 'hdfs://clsklrisk:8020/',    
+            CLSKLOD2     = 'hdfs://clsklod2:8020/',     
             ARNSDPSMD    = 'hdfs://arnsdpsmd2:8020/',
-            CLSKLSBX     = 'hdfs://clsklsbx:8020/',     # Разделяемое хранилище
-            CLSKLSMD     = 'hdfs://clsklsmd:8020/',     # ОД СМД
-            CLSKLK7M     = 'hdfs://clsklk7m:8020/',     # ОД К7М
-            NAMESERVICE1 = 'hdfs://nameservice1:8020/', # Лаборатория данных 2.0
-            SUPERCLUSTER = 'hdfs://Supercluster:8020/', # Облако данных Южный порт
-            CLSKLROZN    = 'hdfs://clsklrozn:8020/',    # ОД Розница
+            CLSKLSBX     = 'hdfs://clsklsbx:8020/',     
+            CLSKLSMD     = 'hdfs://clsklsmd:8020/',     
+            CLSKLK7M     = 'hdfs://clsklk7m:8020/',     
+            NAMESERVICE1 = 'hdfs://nameservice1:8020/', 
+            SUPERCLUSTER = 'hdfs://Supercluster:8020/', 
+            CLSKLROZN    = 'hdfs://clsklrozn:8020/',    
         )
         if self.name_nodes is not None:
             self.namenodes = ['hdfs://nsld3:8020/'] + [nodes[n] for n in self.name_nodes]
